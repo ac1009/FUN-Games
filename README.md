@@ -1,1 +1,1 @@
-# Night-Wordle
+# FUN-Games
