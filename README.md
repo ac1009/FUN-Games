@@ -6,11 +6,11 @@
 This week I did a lot of researching for my Wordle game and I started working on my first game
 
 ## Week 2 
-
+Kept on working on my own Wordle game
 ## Week 3
-
+Did more research to make it work 
 ## Week 4
-
+Did a ton of details to make it look better and I fully finished my Wordle game
 ## Week 5
 
 ## Week 6
