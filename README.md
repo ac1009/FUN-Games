@@ -1,6 +1,6 @@
 # Title: FUN Games
 
-# Plan For Q4: First I am will create Wordle for the half year presentation. Then the second half of Q4 I will do rock paper scissors, and then a color matching game.
+# Plan For Q4: First I will create Wordle for the half year presentation. Then the second half of Q4 I will do rock paper scissors, and if time I will then make a color matching game.
 
 ## Week 1
 This week I did a lot of researching for my Wordle game and I started working on my first game
