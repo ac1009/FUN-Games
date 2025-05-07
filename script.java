@@ -1,14 +1,14 @@
 const words = [
-  "guard", "hotel", "house", "table", "storm", "point", "smile", "brave", "trade", "basic",
-  "alive", "peace", "world", "paint", "paper", "drift", "scout", "spark", "child", "early",
-  "magic", "sport", "teach", "clear", "break", "climb", "lunch", "group", "watch", "night",
-  "fight", "crowd", "toast", "score", "drink", "prize", "block", "plant", "phone", "clean",
-  "story", "brain", "small", "trust", "ghost", "begin", "green", "white", "brown", "black",
-  "sleep", "crown", "glass", "clock", "proud", "fable", "sharp", "round", "earth",
-  "habit", "enter", "fresh", "giant", "honor", "joint", "knock", "march", "nerve", "ocean",
-  "piano", "quick", "ridge", "stone", "trick", "urban", "vapor", "water", "youth", "zesty",
-  "angle", "broom", "chill", "daisy", "elbow", "flock", "grind", "haste", "inbox", "jolly",
-  "karma", "laugh", "mango", "nurse", "orbit", "scale", "shine", "wrist", "yield"
+  "world", "sport", "chair", "plant", "light", "break", "clean", "drink", "stone", "quiet",
+  "fresh", "cloud", "smart", "trace", "flame", "grape", "point", "drive", "small", "clock",
+  "build", "train", "lucky", "match", "pride", "glass", "field", "sugar", "jelly", "piano",
+  "catch", "dance", "flock", "mango", "knife", "tiger", "music", "vital", "proud", "camel",
+  "speak", "beach", "drill", "badge", "queen", "motor", "shelf", "truck", "angle", "robot",
+  "value", "child", "fight", "grind", "lunch", "sharp", "birth", "cover", "night", "order",
+  "watch", "spend", "crane", "toast", "frame", "swing", "lemon", "punch", "raise", "beard",
+  "sight", "angry", "below", "storm", "blend", "shout", "jumpy", "crisp", "vapor", "quick",
+  "giant", "paint", "floor", "march", "frost", "badge", "globe", "zebra", "teach", "input",
+  "scale", "water", "power", "voice", "brand", "creak", "stone", "flute", "habit", "spine"
 ];
 
 let secret = words[Math.floor(Math.random() * words.length)];
