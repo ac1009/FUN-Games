@@ -39,7 +39,6 @@ keys.forEach(function(letter) {
   keyboard.appendChild(key);
 });
 
-
 const enterKey = document.createElement("button");
 enterKey.textContent = "Enter";
 enterKey.className = "key";
