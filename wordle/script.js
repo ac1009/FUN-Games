@@ -1,3 +1,4 @@
+/*  */
 const words = [
   "world", "sport", "chair", "plant", "light", "break", "clean", "drink", "stone", "quiet",
   "fresh", "cloud", "smart", "trace", "flame", "grape", "point", "drive", "small", "clock",
