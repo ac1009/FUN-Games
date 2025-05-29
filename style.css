@@ -18,19 +18,19 @@ h1 {
 }
 
 .choices img:hover {
-  transform: scale(1.3); // This makes the images bigger when someone hovers their mouse over it
   border-color: #000;
+  transform: scale(1.3); // This makes the images bigger when someone hovers their mouse over it
 }
 
 #restart button {
-  margin-top: 20px;
-  padding: 13px;
-  font-size: 18px;
-  background-color: #0f1684; // I thought of doing a dark blue background for the restart button
   color: white;
   border: none; // No border for the restart button
   border-radius: 5px;
   cursor: pointer; // This makes the restart button clickable
+  margin-top: 20px;
+  padding: 13px;
+  font-size: 18px;
+  background-color: #0f1684; // I thought of doing a dark blue background for the restart button
 }
 
 #directions {
