@@ -28,7 +28,7 @@ function play(playerChoice) {
   if (playerScore === 3 || computerScore === 3) {
     // If someone reached 3 points it says the winner
     result += playerScore === 3 ? " You won the game!" : " Computer won the game!";
-    document.getElementById("restart-btn").style.display = "inline-block"; // This shows the restart button on the screen
+    document.getElementById("restart button").style.display = "inline-block"; // This shows the restart button on the screen
   }
 
   // Shows the result and what the computer picked
