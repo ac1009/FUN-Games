@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 25px;
+  background-color: orange;
+}
+
+h1 {
+  color: yellow;
+}
+
+.choices img {
+  width: 100px;
+  margin: 10px;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 13px; // This makes the corners of the images better
+}
+
+.choices img:hover {
+  transform: scale(1.3); // This makes the images bigger when someone hovers their mouse over it
+  border-color: #000;
+}
+
+#restart button {
+  margin-top: 20px;
+  padding: 13px;
+  font-size: 18px;
+  background-color: #0f1684; // I thought of doing a dark blue background for the restart button
+  color: white;
+  border: none; // No border for the restart button
+  border-radius: 5px;
+  cursor: pointer; // This makes the restart button clickable
+}
+
+#directions {
+  font-size: 15px;
+  color: #0f9138; // I made a cool light green text color
+}
