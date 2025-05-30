@@ -12,11 +12,11 @@ Did more research to make it work
 ## Week 4
 Did a ton of details to make it look better and I fully finished my Wordle game
 ## Week 5
-
+Research for rock paper scissors game
 ## Week 6
-
+More research and kept on working on it
 ## Week 7
-
+Finished it
 ## Week 8
 
 ## Week 9
