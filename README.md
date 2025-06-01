@@ -12,13 +12,13 @@ Did more research to make it work
 ## Week 4
 Did a ton of details to make it look better and I fully finished my Wordle game
 ## Week 5
-
+Started research for my rock paper scissors game
 ## Week 6
-
+Worked on my rock paper scissors game
 ## Week 7
-
+Added more detail and finished
 ## Week 8
-
+Started research for color matching game
 ## Week 9
 
 ## Week 10
