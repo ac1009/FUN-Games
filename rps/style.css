@@ -1,1 +1,46 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 25px;
+  background-color: orange;
+}
 
+h1 {
+  color: yellow;
+}
+
+.choices img {
+  width: 100px;
+  margin: 10px;
+  cursor: pointer;
+/*https://youtu.be/3uKdQx-SZ5A?list=LL&t=387 , it told me about the cursor pointer*/
+  border: 2px solid;
+  border-radius: 13px; /* This makes the corners of the images better */
+}
+
+.choices img:hover {
+   /*https://youtu.be/O8R1aedA_S4?list=LL&t=772 , I learned how to hover over images to make it look better*/
+  transform: scale(1.3); /* This makes the images bigger when someone hovers their mouse over it */
+  border-color: #000;
+}
+
+#restart-btn {
+  margin-top: 20px;
+  padding: 13px;
+  font-size: 18px;
+  background-color: #0f1684; /* I thought of doing a dark blue background for the restart button */
+  color: white;
+  border: none; /* No border for the restart button */
+  border-radius: 5px;
+  cursor: pointer; /* This makes the restart button clickable */
+}
+
+#restart-btn:hover {
+  background-color: #1c38f8; /* I wanted to make the color brighter when you hover over the restart button, so I made it lighter blue */
+  transform: scale(1.3);
+}
+
+#directions {
+  font-size: 15px;
+  color: #0f9138; /* I made a cool light green text color */
+}
