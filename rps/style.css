@@ -33,6 +33,7 @@ h1 {
   border: none; /* No border for the restart button */
   border-radius: 5px;
   cursor: pointer; /* This makes the restart button clickable */
+  display: none;
 }
 
 #restart-btn:hover {
