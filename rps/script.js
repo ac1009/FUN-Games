@@ -1,7 +1,5 @@
 let playerScore = 0; // This sets the player's starting score to 0
-// https://youtu.be/3uKdQx-SZ5A?list=LL&t=1066
 let computerScore = 0; // Sets the computer's starting score to 0
-// https://youtu.be/3uKdQx-SZ5A?list=LL&t=1066 , this is a very important step
 
 function play(playerChoice) {
   if (playerScore === 3 || computerScore === 3) return; // It stops the game if someone already reached 3 points
@@ -27,7 +25,7 @@ function play(playerChoice) {
     // https://youtu.be/A3EzYYV3ulE?list=LL&t=572
   ) {
     playerScore++; // This adds a point to the player if they beat the computer's choice
-    // https://youtu.be/3uKdQx-SZ5A?list=LL&t=1109 , 
+    // https://youtu.be/3uKdQx-SZ5A?list=LL&t=1109 
     result = "You win this round!"; // It will say this message if the player won the round
   } else {
     computerScore++; // Adds one point to computer if they beat the player's choice
@@ -42,6 +40,7 @@ function play(playerChoice) {
     result += playerScore === 3 ? " You won the game!" : " Computer won the game!";
     // https://youtu.be/3uKdQx-SZ5A?list=LL&t=708 , helped inspire but different code
     document.getElementById("restart-btn").style.display = "inline-block"; // This shows the restart button on the screen
+    // https://www.w3schools.com/css/css_inline-block.asp
   }
 
   document.getElementById("result").textContent = "Computer chose " + computerChoice + ". " + result;  // Shows the result and what the computer picked
