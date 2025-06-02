@@ -1,1 +1,43 @@
+body {
+  font-family: Arial, sans-serif; 
+  background-color: black; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 500px; 
+}
 
+.game-container {
+  text-align: center; 
+  background: white; 
+  padding: 29px; /* Space inside container*/
+  border: 2px solid black; 
+}
+
+.target {
+  width: 100px; 
+  height: 100px; 
+  margin: 38px auto; /*This centers the big white box in the middle*/
+  border: 2px solid #000; 
+  background: white; 
+}
+
+.colors {
+  display: flex; /*This makes it so the color blocks are in a row*/
+  justify-content: center; /*This makes the colors centered well*/
+  gap: 8.7px; /*Space between each color block*/
+  margin-bottom: 18px; /*Space below the color row*/
+}
+
+.color {
+  width: 48px; /*Width of each color block*/
+  height: 47px; /*Height of each color box*/
+  cursor: pointer; /*This makes it so you can use your mouse to click on the colors*/
+  border: 2px solid #000; /*Black border around each color*/
+}
+
+#title {
+  text-decoration: underline; /* Underlines the title text */
+  font-size: 30px; 
+  color: black; 
+}
