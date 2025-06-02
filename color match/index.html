@@ -1,1 +1,22 @@
-
+<html> 
+  <body>
+    <div class="game-container">              
+      <h1 id="title">Color Matching!</h1>  
+      <div id="target" class="target"></div> <!--Box that shows the target color-->
+      <div class="colors"> <!--Container for all color choices-->
+        <div class="color" style="background: red" onclick="checkColor('red')"></div>   
+        <div class="color" style="background: green" onclick="checkColor('green')"></div> 
+        <div class="color" style="background: blue" onclick="checkColor('blue')"></div>    
+        <div class="color" style="background: yellow" onclick="checkColor('yellow')"></div>
+        <div class="color" style="background: gray" onclick="checkColor('gray')"></div>   
+        <div class="color" style="background: purple" onclick="checkColor('purple')"></div>
+        <div class="color" style="background: maroon" onclick="checkColor('maroon')"></div>
+        <div class="color" style="background: orange" onclick="checkColor('orange')"></div>
+      </div>
+      <p>Time: <span id="timer">20</span> seconds</p> <!--This is for the 20 second timer that is live-->
+      <p>Score: <span id="score">0</span></p> <!--Live score-->
+      <button onclick="startGame()">Go</button> <!--Button to start the game-->
+      <button onclick="restartGame()">Restart</button> <!--Button to restart the game-->
+    </div>
+  </body>
+</html>
