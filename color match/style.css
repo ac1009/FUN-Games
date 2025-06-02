@@ -2,7 +2,9 @@ body {
   font-family: Arial, sans-serif; 
   background-color: black; 
   display: flex; 
+ /*https://www.w3schools.com/css/css3_flexbox.asp*/ , makes the layout look better
   justify-content: center; 
+ /*https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content*/
   align-items: center; 
   height: 500px; 
 }
@@ -10,7 +12,7 @@ body {
 .game-container {
   text-align: center; 
   background: white; 
-  padding: 29px; /* Space inside container*/
+  padding: 29px; /*Space inside container*/
   border: 2px solid black; 
 }
 
@@ -37,7 +39,8 @@ body {
 }
 
 #title {
-  text-decoration: underline; /* Underlines the title text */
+  text-decoration: underline; /*Underlines the title text*/
+  /*https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration , to make my title look better*/
   font-size: 30px; 
   color: black; 
 }
