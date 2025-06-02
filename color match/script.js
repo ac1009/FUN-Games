@@ -12,6 +12,7 @@ const target = document.getElementById('target'); // The box shows the target co
 
 function pickColor() {
   targetColor = colors[Math.floor(Math.random() * colors.length)]; // Picks a random color from my list of 8 colors
+  // https://www.w3schools.com/JS/js_random.asp
   target.style.background = targetColor; // This shows the picked color
 }
 
@@ -20,6 +21,7 @@ function checkColor(clickedColor) {
   if (clickedColor === targetColor) { // This checks if the clicked color matches the target
     score++; // Increases score by 1 if matched correctly
     scoreDisplay.textContent = score; // This updates the score shown on the screen
+    // https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent
   }
   pickColor(); // Pick a new target color randomly
 }
@@ -33,20 +35,21 @@ function startGame() {
   timerDisplay.textContent = timeLeft; 
   pickColor(); // Pick first target color to start off 
 
-  timer = setInterval(() => { // This starts the timer of 20 seconds, and it runs every 1 second
-    timeLeft--; // Decreases the time left of the round by 1 second
+  timer = setInterval(function() { // This starts the timer of 20 seconds, and it runs every 1 second
+    // https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval
+    timeLeft = timeLeft - 1; // Decreases the time left of the round by 1 second
     timerDisplay.textContent = timeLeft; 
 
-    if (timeLeft <= 0) { // If time is up
+    if (timeLeft === 0) { // If time is up
       clearInterval(timer); // Stop the timer
       gameActive = false; 
-      alert("Time's up! You scored: " + score); // Shows an alert with final score of what you got
+      alert("Time's up! Your score is: " + score); // Shows an alert with final score of what you got
     }
   }, 1000);
 }
-
 function restartGame() {
   clearInterval(timer); // Stops the timer if running
+  // https://www.w3schools.com/jsref/met_win_clearinterval.asp
   score = 0; // Resets the score to 0
   timeLeft = 20; // Resets the time
   gameActive = false; 
