@@ -1,4 +1,5 @@
 let colors = ['red', 'green', 'blue', 'yellow', 'gray', 'purple', 'maroon', 'orange']; // The list of all the possible colors
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array , I forgot how to make a list
 
 let score = 0; // The player's score starts at 0
 let timeLeft = 20; // There is a total of 20 seconds for a round
@@ -12,7 +13,7 @@ const target = document.getElementById('target'); // The box shows the target co
 
 function pickColor() {
   targetColor = colors[Math.floor(Math.random() * colors.length)]; // Picks a random color from my list of 8 colors
-  // https://www.w3schools.com/JS/js_random.asp
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random , to make it not rigged
   target.style.background = targetColor; // This shows the picked color
 }
 
@@ -21,7 +22,7 @@ function checkColor(clickedColor) {
   if (clickedColor === targetColor) { // This checks if the clicked color matches the target
     score++; // Increases score by 1 if matched correctly
     scoreDisplay.textContent = score; // This updates the score shown on the screen
-    // https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent
+    // https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent , to update the score for each round
   }
   pickColor(); // Pick a new target color randomly
 }
@@ -36,7 +37,7 @@ function startGame() {
   pickColor(); // Pick first target color to start off 
 
   timer = setInterval(function() { // This starts the timer of 20 seconds, and it runs every 1 second
-    // https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval
+    // https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval , to start the timer for my game
     timeLeft = timeLeft - 1; // Decreases the time left of the round by 1 second
     timerDisplay.textContent = timeLeft; 
 
@@ -49,7 +50,7 @@ function startGame() {
 }
 function restartGame() {
   clearInterval(timer); // Stops the timer if running
-  // https://www.w3schools.com/jsref/met_win_clearinterval.asp
+  // https://www.w3schools.com/jsref/met_win_clearinterval.asp , to make the timer stop if running
   score = 0; // Resets the score to 0
   timeLeft = 20; // Resets the time
   gameActive = false; 
