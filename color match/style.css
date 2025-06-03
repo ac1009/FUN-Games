@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif; 
   background-color: black; 
   display: flex; 
- /*https://www.w3schools.com/css/css3_flexbox.asp*/ , makes the layout look better*/
+ /*https://www.w3schools.com/css/css3_flexbox.asp , makes the layout look better*/
   justify-content: center; 
  /*https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content*/
   align-items: center; 
