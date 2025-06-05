@@ -1,9 +1,9 @@
 body {
   font-family: Arial, sans-serif; 
   background-color: black; 
-  display: flex; 
+  display: flex; /*This makes it so the color blocks are in a row*/
  /*https://www.w3schools.com/css/css3_flexbox.asp , makes the layout look better*/
-  justify-content: center; 
+  justify-content: center; /*This makes the colors centered well*/
  /*https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content*/
   align-items: center; 
   height: 500px; 
