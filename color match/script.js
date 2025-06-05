@@ -1,6 +1,4 @@
 let colors = ['red', 'green', 'blue', 'yellow', 'gray', 'purple', 'maroon', 'orange']; // The list of all the possible colors
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array , I forgot how to make a list
-
 let score = 0; // The player's score starts at 0
 let timeLeft = 20; // There is a total of 20 seconds for a round
 let gameActive = false; // Sees if the game is running and this is very important, because it could mess up the score without this
@@ -30,10 +28,12 @@ function checkColor(clickedColor) {
 function startGame() {
   clearInterval(timer); // This clears any timer going
   score = 0; // Resets the score back to 0
-  timeLeft = 20; // This resets the imer to 20 seconds
-  gameActive = true; 
+  timeLeft = 20; // This resets the timer to 20 seconds
+  gameActive = true; // The game is running and this prevents people from getting points before or after the round ends
   scoreDisplay.textContent = score; // To show 0 at the start of the round
+  // https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent , for the textContent to get updated
   timerDisplay.textContent = timeLeft; // Shows 20 seconds at the beginning
+  // https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent
   pickColor(); // Pick first target color to start off 
 
   timer = setInterval(function() { // This starts the timer of 20 seconds, and it runs every 1 second
@@ -46,7 +46,8 @@ function startGame() {
       gameActive = false; 
       alert("Time's up! Your score is: " + score); // Shows an alert with final score of what you got
     }
-  }, 1000);
+  }, 1000); // This equals to 1 second and it makes the game countdown once per second
+  // https://www.w3schools.com/howto/howto_js_countdown.asp , this helped for the countdown
 }
 function restartGame() {
   clearInterval(timer); // Stops the timer if running
