@@ -28,18 +28,18 @@ function checkColor(clickedColor) {
 }
 
 function startGame() {
-  clearInterval(timer); 
+  clearInterval(timer); // This clears any timer going
   score = 0; // Resets the score back to 0
   timeLeft = 20; // This resets the imer to 20 seconds
   gameActive = true; 
-  scoreDisplay.textContent = score; 
-  timerDisplay.textContent = timeLeft; 
+  scoreDisplay.textContent = score; // To show 0 at the start of the round
+  timerDisplay.textContent = timeLeft; // Shows 20 seconds at the beginning
   pickColor(); // Pick first target color to start off 
 
   timer = setInterval(function() { // This starts the timer of 20 seconds, and it runs every 1 second
     // https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval , to start the timer for my game
     timeLeft = timeLeft - 1; // Decreases the time left of the round by 1 second
-    timerDisplay.textContent = timeLeft; 
+    timerDisplay.textContent = timeLeft; // Updates the time
 
     if (timeLeft === 0) { // If time is up
       clearInterval(timer); // Stop the timer
@@ -54,7 +54,7 @@ function restartGame() {
   score = 0; // Resets the score to 0
   timeLeft = 20; // Resets the time
   gameActive = false; 
-  scoreDisplay.textContent = score; 
-  timerDisplay.textContent = timeLeft; 
+  scoreDisplay.textContent = score; // Shows 0 as the score
+  timerDisplay.textContent = timeLeft; // Shows 20 seconds at the beginning
   target.style.background = 'white'; // Clears the big white target color box back to white when the round is restarted
 }
